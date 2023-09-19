@@ -7,9 +7,9 @@ pipeline {
         stage('SonarQube Scan') {
             steps {
                 bat 'mvn sonar:sonar \
-                  -Dsonar.projectKey=simple-java-maven-app \
+                  -Dsonar.projectKey=sample-java-maven-app \
                   -Dsonar.host.url=http://localhost:9000 \
-                  -Dsonar.login=3e224092e819f668051ef32ab263efd0cc95c173'
+                  -Dsonar.login=dc0d67768f0ed7156a9148407d9e391b0fd91129'
             }
         }
         stage('Build') {
